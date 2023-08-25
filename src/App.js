@@ -9,7 +9,7 @@ function App() {
     {
       id: uuidv4(),
       nome: 'Programação',
-      cor: '#57c378',
+      cor: '#57c215',
     },
     {
       id: uuidv4(),
