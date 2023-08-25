@@ -14,7 +14,7 @@ function App() {
     {
       id: uuidv4(),
       nome: 'Front-end',
-      cor: '#82CFFA',
+      cor: '#82CFFF',
     },
     {
       id: uuidv4(),
