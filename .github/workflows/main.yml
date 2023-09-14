@@ -1,0 +1,14 @@
+name: Teste Action React
+on: [push]
+jobs:
+  Explore-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A job começou a rodar agora"
+      - name: Chec out repository code
+        uses: actions/checkout@v3
+      - run: echo "Workflow is ready to test
+      - name: List files in the repository
+        run: ls
+      - run: echo "Acima tenho as pastas e arquivos do meu diretorio"
+  
