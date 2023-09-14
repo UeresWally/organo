@@ -3,12 +3,16 @@ on: [push]
 jobs:
   Explore-Actions:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
     steps:
       - run: echo "A job começou a rodar agora"
-      - name: Chec out repository code
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/checkout@v3
-      - run: echo "Workflow is ready to test"
-      - name: List files in the repository
-        run: ls
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm start
       - run: echo "Acima tenho as pastas e arquivos do meu diretorio"
   
