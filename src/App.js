@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {v4 as uuidv4} from 'uuid'
-import Banner from './componentes/Banner/Banner';
+import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
 
@@ -72,7 +72,9 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
+      <Banner 
+        enderecoImagem='/imagens/banner.png'
+      />
       <Formulario 
         cadastrarTime={cadastrarTime}
         times={times.map(time => time.nome)} 
